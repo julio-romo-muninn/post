@@ -27,7 +27,7 @@ description: "Explora todos los posts por etiquetas."
         <span class="ls-group">tags</span>
         <span class="ls-size">{{ tag[1].size | times: 2 }}K</span>
         <span class="ls-date">{{ site.time | date: "%b %d %H:%M" }}</span>
-        <span class="ls-name"><span class="folder-icon">🏷️</span> #{{ tag[0] }}</span>
+        <span class="ls-name"><i class="fas fa-tag"></i> #{{ tag[0] }}</span>
       </a>
       {% endfor %}
     </div>

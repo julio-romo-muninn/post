@@ -26,7 +26,7 @@ description: "Explora todos los posts organizados por categorías."
         <span class="ls-group">posts</span>
         <span class="ls-size">{{ category[1].size | times: 4 }}K</span>
         <span class="ls-date">{{ site.time | date: "%b %d %H:%M" }}</span>
-        <span class="ls-name"><span class="folder-icon">📁</span> {{ category[0] }}/</span>
+        <span class="ls-name"><i class="fas fa-folder"></i> {{ category[0] }}/</span>
       </a>
       {% endfor %}
     </div>
