@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<section class="archive-section">
+  <header class="archive-header">
+    <div class="terminal-breadcrumb">
+      <span class="prompt">$</span> grep -r "category: {{ page.title }}" ./posts/
+    </div>
+    <h1 class="page-title">
+      <span class="bracket">[</span> Categoría: {{ page.title }} <span class="bracket">]</span>
+    </h1>
+  </header>
+  
+  <div class="posts-grid">
+    {% for post in page.posts %}
+    <article class="post-card">
+      <div class="post-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%d/%m/%Y" }}
+        </time>
+      </div>
+      <h3 class="post-title">
+        <a href="{{ post.url | relative_url }}">
+          <span class="prompt">></span> {{ post.title }}
+        </a>
+      </h3>
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+    </article>
+    {% endfor %}
+  </div>
+  
+  <div class="back-link">
+    <a href="{{ '/categories' | relative_url }}" class="btn-terminal">
+      <span class="prompt">$</span> cd ../categories/
+    </a>
+  </div>
+</section>

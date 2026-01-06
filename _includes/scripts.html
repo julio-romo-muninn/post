@@ -1,0 +1,49 @@
+<!-- Main JavaScript -->
+<script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
+
+<!-- Syntax Highlighting -->
+{% if page.layout == 'post' %}
+<script>
+  // Add copy button to code blocks
+  document.addEventListener('DOMContentLoaded', function() {
+    const codeBlocks = document.querySelectorAll('pre.highlight');
+    
+    codeBlocks.forEach(function(block) {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'code-block-wrapper';
+      block.parentNode.insertBefore(wrapper, block);
+      wrapper.appendChild(block);
+      
+      const copyBtn = document.createElement('button');
+      copyBtn.className = 'copy-btn';
+      copyBtn.textContent = 'Copy';
+      copyBtn.setAttribute('aria-label', 'Copy code to clipboard');
+      
+      copyBtn.addEventListener('click', function() {
+        const code = block.querySelector('code').innerText;
+        navigator.clipboard.writeText(code).then(function() {
+          copyBtn.textContent = 'Copied!';
+          copyBtn.classList.add('copied');
+          setTimeout(function() {
+            copyBtn.textContent = 'Copy';
+            copyBtn.classList.remove('copied');
+          }, 2000);
+        });
+      });
+      
+      wrapper.appendChild(copyBtn);
+    });
+  });
+</script>
+{% endif %}
+
+<!-- Google Analytics (si está configurado) -->
+{% if site.google_analytics %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics }}');
+</script>
+{% endif %}

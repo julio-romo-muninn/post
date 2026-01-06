@@ -1,0 +1,59 @@
+<header class="site-header">
+  <nav class="nav-container">
+    <div class="nav-brand">
+      <a href="{{ '/' | relative_url }}" class="logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">{{ site.title | default: "TPX" }}</span>
+        <span class="logo-bracket">]</span>
+        <span class="cursor blink">_</span>
+      </a>
+    </div>
+    
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
+    
+    <div class="nav-overlay"></div>
+    
+    <ul class="nav-menu">
+      <li class="nav-menu-header">
+        <span class="menu-title">Menú</span>
+      </li>
+      <li class="nav-item">
+        <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
+          <span class="prompt">~</span>/home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{ '/archive' | relative_url }}" class="nav-link {% if page.url contains 'archive' %}active{% endif %}">
+          <span class="prompt">~</span>/archive
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{ '/categories' | relative_url }}" class="nav-link {% if page.url contains 'categories' %}active{% endif %}">
+          <span class="prompt">~</span>/categories
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{ '/tags' | relative_url }}" class="nav-link {% if page.url contains 'tags' %}active{% endif %}">
+          <span class="prompt">~</span>/tags
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{ '/about' | relative_url }}" class="nav-link {% if page.url contains 'about' %}active{% endif %}">
+          <span class="prompt">~</span>/about
+        </a>
+      </li>
+    </ul>
+    
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme" title="Cambiar tema">
+        <span class="icon-sun"><i class="fa-solid fa-sun"></i></span>
+        <span class="icon-moon"><i class="fa-solid fa-moon"></i></span>
+      </button>
+      <a href="{{ '/feed.xml' | relative_url }}" class="rss-link" aria-label="RSS Feed" title="RSS Feed">
+        <i class="fa-solid fa-rss"></i>
+      </a>
+    </div>
+  </nav>
+</header>

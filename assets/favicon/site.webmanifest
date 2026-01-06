@@ -1,0 +1,16 @@
+{
+  "name": "TPX Blog",
+  "short_name": "TPX",
+  "icons": [
+    {
+      "src": "/assets/favicon/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#0d1117",
+  "background_color": "#0d1117",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}

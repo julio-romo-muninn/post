@@ -1,0 +1,113 @@
+// ==============================================
+// ANIMATIONS - Subtle & Professional
+// ==============================================
+
+@use "variables" as *;
+
+// Blink cursor
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+// Fade in (subtle)
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+// Fade in from left (subtle)
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-15px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+// Scale in (subtle)
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+// Slide down
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+// Pulse glow (subtle)
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 10px rgba($color-primary, 0.1); }
+  50% { box-shadow: 0 0 15px rgba($color-primary, 0.2); }
+}
+
+// ==============================================
+// UTILITY ANIMATION CLASSES
+// ==============================================
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.4s ease forwards;
+}
+
+// ==============================================
+// STAGGERED ANIMATIONS (subtle)
+// ==============================================
+
+// Staggered animations for post cards
+.posts-grid .post-card {
+  opacity: 0;
+  animation: fadeIn 0.4s ease forwards;
+  
+  @for $i from 1 through 12 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.05}s;
+    }
+  }
+}
+
+// ==============================================
+// HOVER EFFECTS (subtle & professional)
+// ==============================================
+
+// Subtle lift on hover
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// ==============================================
+// MINIMAL SPECIAL EFFECTS
+// ==============================================
+
+// Terminal cursor
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background-color: $color-primary;
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+// Loading spinner
+.loading-spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid $color-border;
+  border-top-color: $color-primary;
+  border-radius: 50%;
+  animation: rotate 0.8s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

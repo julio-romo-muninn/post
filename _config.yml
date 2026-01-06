@@ -1,0 +1,101 @@
+# Site Settings
+title: "TPX Posts"
+tagline: "Hacking the future, one post at a time"
+description: >-
+  Post técnico de TPX sobre desarrollo de software, ciberseguridad, 
+  hacking ético y tecnología. Artículos, tutoriales y guías prácticas.
+url: "https://posts.tpx.security" # Tu dominio con Cloudflare
+baseurl: "" # Raíz del sitio
+lang: es-ES
+
+# Author
+author:
+  name: "TPX Staff"
+  email: "hola@tpx.security"
+  bio: "Pensando como hackers, atacando como hackers..."
+  avatar: "/assets/img/avatar.png"
+  social:
+    twitter: "tpx"
+    linkedin: "tpx"
+    instagram: "tpx"
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    block:
+      line_numbers: true
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-archives
+
+# SEO Settings
+twitter:
+  username: tpx
+  card: summary_large_image
+
+social:
+  name: TPX
+  links:
+    - https://twitter.com/tpx
+    - https://github.com/tpx
+    - https://linkedin.com/company/tpx
+
+# Google Analytics (descomentar y agregar tu ID)
+# google_analytics: UA-XXXXXXXXX-X
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "TPX Team"
+      comments: true
+      toc: true
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-category
+    tag: archive-tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
+# Pagination
+paginate: 10
+paginate_path: "/page/:num/"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - README.md

@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  jekyll:
+    image: jekyll/jekyll:4.3
+    container_name: tpx-blog
+    command: jekyll serve --watch --force_polling --livereload
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - .:/srv/jekyll
+      - jekyll_bundle:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=development
+
+volumes:
+  jekyll_bundle:

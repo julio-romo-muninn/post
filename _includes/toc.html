@@ -1,0 +1,27 @@
+{% assign headers = include.html | split: '<h' %}
+{% assign toc_content = '' %}
+{% assign id_counts = '' %}
+
+<ul class="toc-list">
+{% for header in headers %}
+  {% if header contains 'id="' %}
+    {% assign level = header | slice: 0, 1 %}
+    {% if level == '2' or level == '3' %}
+      {% assign id_start = header | split: 'id="' | last %}
+      {% assign id = id_start | split: '"' | first %}
+      {% assign title_start = header | split: '>' | slice: 1, 10 | join: '>' %}
+      {% assign title = title_start | split: '</h' | first | strip_html %}
+      
+      {% if level == '2' %}
+      <li class="toc-item level-2">
+        <a href="#{{ id }}" class="toc-link">{{ title }}</a>
+      </li>
+      {% elsif level == '3' %}
+      <li class="toc-item level-3">
+        <a href="#{{ id }}" class="toc-link">{{ title }}</a>
+      </li>
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</ul>

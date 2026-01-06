@@ -1,0 +1,316 @@
+// ==============================================
+// BASE STYLES
+// ==============================================
+
+@use "variables" as *;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $font-size-base;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-sans;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $color-text-primary;
+  background-color: $color-bg-primary;
+  min-height: 100vh;
+  
+  // Scanline effect (optional)
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    z-index: 9999;
+    opacity: 0.03;
+  }
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-mono;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+  color: $color-text-primary;
+  margin-bottom: $spacing-md;
+  letter-spacing: -0.02em;
+}
+
+h1 { 
+  font-size: $font-size-4xl;
+  background: linear-gradient(90deg, $color-primary, $color-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+h2 { font-size: $font-size-3xl; }
+h3 { font-size: $font-size-2xl; }
+h4 { font-size: $font-size-xl; }
+h5 { font-size: $font-size-lg; }
+h6 { font-size: $font-size-base; }
+
+p {
+  margin-bottom: $spacing-md;
+}
+
+a {
+  color: $color-text-link;
+  text-decoration: none;
+  transition: color $transition-fast;
+  
+  &:hover {
+    color: $color-text-link-hover;
+    text-shadow: 0 0 10px $color-primary;
+  }
+}
+
+strong, b {
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+}
+
+em, i {
+  font-style: italic;
+}
+
+code {
+  font-family: $font-mono;
+  font-size: 0.875em;
+  padding: 2px 6px;
+  background-color: $color-bg-tertiary;
+  border-radius: $radius-sm;
+  color: $color-primary;
+}
+
+// Code blocks - Terminal style
+pre {
+  font-family: $font-mono;
+  font-size: $font-size-sm;
+  line-height: 1.6;
+  background-color: #0d1117;
+  border-radius: $radius-lg;
+  overflow-x: auto;
+  margin-bottom: $spacing-lg;
+  
+  code {
+    display: block;
+    padding: $spacing-md $spacing-lg;
+    background: none;
+    border: none;
+    color: #c9d1d9;
+    border-radius: 0;
+  }
+}
+
+// Syntax highlighted code blocks with terminal header
+.highlight {
+  position: relative;
+  background-color: #0d1117;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  margin-bottom: $spacing-lg;
+  overflow: hidden;
+  
+  // Terminal header with filename support
+  &::before {
+    content: attr(data-filename);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 36px;
+    padding: 0 $spacing-md 0 50px;
+    background: linear-gradient(180deg, #21262d 0%, #161b22 100%);
+    border-bottom: 1px solid $color-border;
+    font-family: $font-mono;
+    font-size: 0.75rem;
+    color: $color-text-muted;
+  }
+  
+  // Terminal dots
+  &::after {
+    content: '● ● ●';
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    font-size: 9px;
+    letter-spacing: 6px;
+    background: linear-gradient(90deg, #ff5f56, #ffbd2e, #27ca40);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+  }
+  
+  pre {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    
+    code {
+      padding: $spacing-md $spacing-lg;
+    }
+  }
+  
+  // Nested highlight (from line numbers table)
+  .highlight {
+    border: none;
+    margin: 0;
+    border-radius: 0;
+    
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+  
+  // Line numbers table
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    
+    td {
+      padding: 0;
+      vertical-align: top;
+      
+      &.gutter,
+      &.rouge-gutter {
+        width: 50px;
+        padding: $spacing-md $spacing-sm;
+        color: $color-text-muted;
+        text-align: right;
+        border-right: 1px solid $color-border;
+        user-select: none;
+        background: rgba(0, 0, 0, 0.2);
+        
+        pre {
+          margin: 0;
+          padding: 0;
+          background: transparent;
+          
+          code {
+            padding: 0;
+          }
+        }
+      }
+      
+      &.code,
+      &.rouge-code {
+        pre {
+          margin: 0;
+          padding: $spacing-md $spacing-md;
+          
+          code {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+blockquote {
+  border-left: 4px solid $color-primary;
+  padding-left: $spacing-lg;
+  margin: $spacing-lg 0;
+  font-style: italic;
+  color: $color-text-secondary;
+  background-color: rgba($color-primary, 0.05);
+  padding: $spacing-md $spacing-lg;
+  border-radius: 0 $radius-md $radius-md 0;
+}
+
+ul, ol {
+  margin-bottom: $spacing-md;
+  padding-left: $spacing-xl;
+}
+
+li {
+  margin-bottom: $spacing-sm;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, $color-border, $color-primary, $color-border, transparent);
+  margin: $spacing-2xl 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: $radius-md;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: $spacing-lg;
+  font-size: $font-size-sm;
+  
+  th, td {
+    padding: $spacing-sm $spacing-md;
+    border: 1px solid $color-border;
+    text-align: left;
+  }
+  
+  th {
+    background-color: $color-bg-tertiary;
+    font-weight: $font-weight-semibold;
+    color: $color-primary;
+  }
+  
+  tr:hover {
+    background-color: rgba($color-primary, 0.05);
+  }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-bg-primary;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $color-bg-secondary;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-border;
+  border-radius: $radius-full;
+  
+  &:hover {
+    background: $color-primary;
+  }
+}
+
+// Enhanced header transition
+.site-header {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}

@@ -1,0 +1,24 @@
+# ==============================================
+# AUTHORS DATA
+# ==============================================
+# Add authors here. Use the key as the author name in post front matter.
+# Example: author: tpx-team
+
+tpx-team:
+  name: "Julio Romo"
+  bio: "Lider de ciber inteligencia, apacionado por el hacking etico."
+  avatar: "/assets/img/authors/tpx-team.svg"
+  twitter: "tpx"
+  github: "tpx"
+  linkedin: "tpx"
+  instagram: "tpx"
+  website: "https://tpx.security"
+
+# Example for additional authors:
+# john-doe:
+#   name: "John Doe"
+#   bio: "Senior Developer especializado en Python y seguridad web."
+#   avatar: "/assets/img/authors/john-doe.jpg"
+#   twitter: "johndoe"
+#   github: "johndoe"
+#   instagram: "johndoe"

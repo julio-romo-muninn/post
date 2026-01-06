@@ -1,0 +1,135 @@
+// ==============================================
+// SYNTAX HIGHLIGHTING - HACKER THEME
+// ==============================================
+
+@use "variables" as *;
+
+.highlight {
+  // Colors only - layout is in _base.scss
+  
+  // Comments
+  .c, .c1, .cm, .cs, .cp, .cpf { color: #6a737d; font-style: italic; }
+  
+  // Keywords
+  .k, .kc, .kd, .kn, .kp, .kr, .kt { color: #ff7b72; }
+  
+  // Strings
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr, .ss { color: #a5d6ff; }
+  
+  // Numbers
+  .m, .mf, .mh, .mi, .mo, .il { color: #79c0ff; }
+  
+  // Names / Variables
+  .n, .na, .nb, .nc, .nd, .ne, .nf, .ni, .nl, .nn, .no, .nt, .nv, .nx { color: #c9d1d9; }
+  
+  // Functions
+  .nf, .fm { color: #d2a8ff; }
+  
+  // Classes
+  .nc, .bp { color: #ffa657; }
+  
+  // Operators
+  .o, .ow { color: #ff7b72; }
+  
+  // Punctuation
+  .p { color: #c9d1d9; }
+  
+  // Attributes
+  .na { color: #79c0ff; }
+  
+  // Tags (HTML/XML)
+  .nt { color: #7ee787; }
+  
+  // Error
+  .err { color: #f85149; background-color: transparent; }
+  
+  // Generic
+  .gd { color: #ffa198; background-color: rgba(248, 81, 73, 0.1); }
+  .gi { color: #7ee787; background-color: rgba(46, 160, 67, 0.1); }
+  .ge { font-style: italic; }
+  .gs { font-weight: bold; }
+  .gh { color: #79c0ff; font-weight: bold; }
+  .gp { color: #8b949e; }
+  .gr { color: #f85149; }
+  .gt { color: #f85149; }
+  
+  // Line Numbers
+  .lineno {
+    color: $color-text-muted;
+    user-select: none;
+    padding-right: $spacing-md;
+    border-right: 1px solid $color-border;
+    margin-right: $spacing-md;
+  }
+}
+
+// Code language badge
+pre {
+  position: relative;
+  
+  &[data-lang]::before {
+    content: attr(data-lang);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: $spacing-xs $spacing-sm;
+    font-family: $font-mono;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: $color-text-muted;
+    background-color: $color-bg-tertiary;
+    border-radius: 0 $radius-md 0 $radius-sm;
+  }
+}
+
+// Inline code in different contexts
+p code, li code, td code {
+  background-color: $color-bg-tertiary;
+  color: $color-primary;
+}
+
+// Code block filename header
+.code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacing-sm $spacing-md;
+  background-color: $color-bg-tertiary;
+  border: 1px solid $color-border;
+  border-bottom: none;
+  border-radius: $radius-md $radius-md 0 0;
+  
+  .filename {
+    font-family: $font-mono;
+    font-size: $font-size-sm;
+    color: $color-text-secondary;
+    
+    &::before {
+      content: '📄 ';
+    }
+  }
+  
+  .language {
+    font-family: $font-mono;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: $color-primary;
+    background-color: rgba($color-primary, 0.1);
+    padding: $spacing-xs $spacing-sm;
+    border-radius: $radius-sm;
+  }
+  
+  + pre {
+    border-radius: 0 0 $radius-md $radius-md;
+    margin-top: 0;
+  }
+}
+
+// Diff highlighting
+.highlight .gd {
+  &::before { content: '- '; color: #f85149; }
+}
+
+.highlight .gi {
+  &::before { content: '+ '; color: #7ee787; }
+}

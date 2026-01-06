@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+  </defs>
+  <rect fill="url(#bg)" width="1200" height="630"/>
+  <rect x="50" y="50" width="1100" height="530" rx="20" fill="none" stroke="#ffd607" stroke-width="2" stroke-dasharray="10,5"/>
+  <text x="600" y="280" font-family="monospace" font-size="72" fill="#ffd607" text-anchor="middle" font-weight="bold">TPX BLOG</text>
+  <text x="600" y="350" font-family="monospace" font-size="32" fill="#8b949e" text-anchor="middle">Welcome to the Tech World</text>
+  <text x="600" y="420" font-family="monospace" font-size="24" fill="#ffd607" text-anchor="middle">$ ./start_journey.sh</text>
+</svg>

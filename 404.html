@@ -1,0 +1,139 @@
+---
+layout: default
+title: "404 - Página no encontrada"
+permalink: /404.html
+---
+
+<div class="error-page">
+  <div class="terminal-window">
+    <div class="terminal-header">
+      <span class="terminal-btn red"></span>
+      <span class="terminal-btn yellow"></span>
+      <span class="terminal-btn green"></span>
+      <span class="terminal-title">error_404.sh</span>
+    </div>
+    <div class="terminal-body">
+      <div class="error-code">
+        <span class="prompt">$</span> cat /var/log/error.log
+      </div>
+      <pre class="error-output">
+<span class="error-number">404</span>
+<span class="error-text">ERROR: Página no encontrada</span>
+      </pre>
+      <div class="error-message">
+        <p><span class="prompt">$</span> echo "La página que buscas no existe o fue movida."</p>
+        <p class="output">La página que buscas no existe o fue movida.</p>
+      </div>
+      <div class="error-suggestion">
+        <p><span class="prompt">$</span> ls ~/opciones/</p>
+        <div class="options">
+          <a href="{{ '/' | relative_url }}" class="option-link">
+            <i class="fa-solid fa-home"></i> Volver al inicio
+          </a>
+          <a href="{{ '/archive' | relative_url }}" class="option-link">
+            <i class="fa-solid fa-archive"></i> Ver archivo
+          </a>
+          <a href="{{ '/categories' | relative_url }}" class="option-link">
+            <i class="fa-solid fa-folder"></i> Categorías
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 2rem;
+}
+
+.error-page .terminal-window {
+  max-width: 600px;
+  width: 100%;
+}
+
+.error-page .terminal-body {
+  padding: 2rem;
+}
+
+.error-code {
+  margin-bottom: 1rem;
+  font-family: var(--font-mono);
+  color: var(--color-text-secondary);
+}
+
+.error-output {
+  background: transparent;
+  border: none;
+  padding: 1rem 0;
+  margin: 0;
+  text-align: center;
+}
+
+.error-number {
+  display: block;
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  line-height: 1;
+  text-shadow: 0 0 30px rgba(255, 214, 7, 0.3);
+}
+
+.error-text {
+  display: block;
+  font-size: 1.2rem;
+  color: #ff5f56;
+  margin-top: 0.5rem;
+}
+
+.error-message {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+}
+
+.error-message .output {
+  color: var(--color-text-secondary);
+  padding-left: 1.5rem;
+}
+
+.error-suggestion {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.option-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(255, 214, 7, 0.1);
+  border: 1px solid var(--color-primary);
+  border-radius: 0.5rem;
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.option-link:hover {
+  background: rgba(255, 214, 7, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 214, 7, 0.2);
+}
+
+.prompt {
+  color: var(--color-primary);
+}
+</style>

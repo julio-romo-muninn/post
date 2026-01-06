@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<section class="archive-section">
+  <header class="archive-header">
+    <div class="terminal-breadcrumb">
+      <span class="prompt">$</span> find ./posts -type f -name "*.md" | sort -r
+    </div>
+    <h1 class="page-title">{{ page.title | default: "Archivo" }}</h1>
+  </header>
+  
+  <div class="archive-content">
+    {{ content }}
+    
+    {% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+    
+    {% for year in postsByYear %}
+    <div class="archive-year">
+      <h2 class="year-title">
+        <span class="bracket">[</span> {{ year.name }} <span class="bracket">]</span>
+        <span class="post-count">({{ year.items | size }} posts)</span>
+      </h2>
+      
+      <ul class="archive-list">
+        {% for post in year.items %}
+        <li class="archive-item">
+          <time datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%d/%m" }}
+          </time>
+          <a href="{{ post.url | relative_url }}">
+            <span class="prompt">></span> {{ post.title }}
+          </a>
+          {% if post.categories.size > 0 %}
+          <span class="archive-category">{{ post.categories | first }}</span>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
