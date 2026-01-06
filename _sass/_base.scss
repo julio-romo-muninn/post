@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: $font-sans;
+  font-family: $font-mono;
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $color-text-primary;
@@ -48,7 +48,7 @@ body {
 
 // Typography
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-mono;
+  font-family: $font-title;
   font-weight: $font-weight-bold;
   line-height: $line-height-heading;
   color: $color-text-primary;

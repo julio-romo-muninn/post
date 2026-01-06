@@ -162,7 +162,7 @@
   
   .nav-menu .nav-link {
     font-size: 1rem !important;
-    font-family: $font-sans !important;
+    font-family: $font-mono !important;
     font-weight: $font-weight-medium !important;
     padding: 1rem 1.5rem !important;
     justify-content: flex-start !important;
@@ -197,7 +197,7 @@
     padding: 1.25rem 1.5rem 0.75rem;
     
     .menu-title {
-      font-family: $font-sans;
+      font-family: $font-mono;
       font-size: 0.7rem;
       font-weight: $font-weight-semibold;
       color: $color-text-muted;
