@@ -1,12 +1,12 @@
-# TPX Blog
+# TPX Post
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-00ff9d?style=flat-square&logo=github)](https://yourusername.github.io/blog)
 [![Jekyll](https://img.shields.io/badge/Jekyll-4.3-CC0000?style=flat-square&logo=jekyll)](https://jekyllrb.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
-> 🖥️ Blog técnico con diseño hacker sobre desarrollo, ciberseguridad y tecnología.
+> 🖥️ Post técnico con diseño hacker sobre desarrollo, ciberseguridad y tecnología.
 
-![TPX Blog Preview](assets/img/preview.png)
+![TPX Post Preview](assets/img/preview.png)
 
 ## ✨ Características
 
