@@ -3,6 +3,9 @@ source "https://rubygems.org"
 # Use github-pages gem for GitHub Pages compatibility
 gem "github-pages", group: :jekyll_plugins
 
+# Pin connection_pool to 2.x for Ruby 3.1.7 compatibility (GitHub Actions)
+gem "connection_pool", "~> 2.4"
+
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-seo-tag"
