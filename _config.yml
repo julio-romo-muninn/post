@@ -47,12 +47,10 @@ twitter:
 social:
   name: TPX
   links:
-    - https://twitter.com/tpx
-    - https://github.com/tpx
+    - https://twitter.com/tpx_Security
     - https://linkedin.com/company/tpx
 
-# Google Analytics (descomentar y agregar tu ID)
-# google_analytics: UA-XXXXXXXXX-X
+
 
 # Collections
 collections:
@@ -67,7 +65,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "TPX Team"
+      author: "TPX Staff"
       comments: true
       toc: true
   - scope:
