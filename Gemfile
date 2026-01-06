@@ -12,6 +12,9 @@ gem "minitest", "~> 5.0"
 # Pin activesupport to 7.x for Ruby 3.1.7 compatibility (GitHub Actions)
 gem "activesupport", "~> 7.0"
 
+# Pin nokogiri to 1.16.x for Ruby 3.1.7 compatibility (GitHub Actions)
+gem "nokogiri", "~> 1.16.0"
+
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-seo-tag"
