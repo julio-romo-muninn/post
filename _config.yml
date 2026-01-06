@@ -4,7 +4,7 @@ tagline: "Hacking the future, one post at a time"
 description: >-
   Post técnico de TPX sobre desarrollo de software, ciberseguridad, 
   hacking ético y tecnología. Artículos, tutoriales y guías prácticas.
-url: "https://posts.tpx.security" # Tu dominio con Cloudflare
+url: "https://post.tpx.security" # Tu dominio con Cloudflare
 baseurl: "" # Raíz del sitio
 lang: es-ES
 
