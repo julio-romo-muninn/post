@@ -417,3 +417,123 @@
   margin-top: $spacing-2xl;
   text-align: center;
 }
+
+// Terminal ls -lh style listing
+.terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  
+  &.red { background-color: #ff5f56; }
+  &.yellow { background-color: #ffbd2e; }
+  &.green { background-color: #27ca40; }
+}
+
+.terminal-line {
+  font-family: $font-mono;
+  font-size: 0.9rem;
+  color: $color-text-secondary;
+  padding: $spacing-xs 0;
+  
+  .prompt {
+    color: $color-primary;
+    margin-right: $spacing-sm;
+  }
+}
+
+.terminal-output {
+  margin: $spacing-md 0;
+}
+
+.ls-header {
+  font-family: $font-mono;
+  font-size: 0.85rem;
+  color: $color-text-muted;
+  margin-bottom: $spacing-sm;
+}
+
+.ls-row {
+  display: grid;
+  grid-template-columns: 100px 30px 50px 50px 45px 90px 1fr;
+  gap: $spacing-sm;
+  font-family: $font-mono;
+  font-size: 0.85rem;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: $radius-sm;
+  transition: all 0.15s ease;
+  text-decoration: none;
+  
+  &:hover {
+    background: rgba($color-primary, 0.1);
+    
+    .ls-name {
+      color: $color-primary;
+    }
+  }
+}
+
+.ls-perms {
+  color: $color-secondary;
+}
+
+.ls-count {
+  color: $color-text-muted;
+  text-align: right;
+}
+
+.ls-user {
+  color: $color-warning;
+}
+
+.ls-group {
+  color: $color-info;
+}
+
+.ls-size {
+  color: $color-text-secondary;
+  text-align: right;
+}
+
+.ls-date {
+  color: $color-text-muted;
+}
+
+.ls-name {
+  color: $color-text-primary;
+  font-weight: $font-weight-medium;
+  transition: color 0.15s ease;
+  
+  .folder-icon {
+    margin-right: $spacing-xs;
+  }
+}
+
+// Responsive ls listing
+@media (max-width: $breakpoint-md) {
+  .ls-row {
+    grid-template-columns: 1fr;
+    gap: $spacing-xs;
+    padding: $spacing-md;
+    background: rgba($color-bg-tertiary, 0.5);
+    margin-bottom: $spacing-xs;
+    border-radius: $radius-md;
+  }
+  
+  .ls-perms,
+  .ls-count,
+  .ls-user,
+  .ls-group,
+  .ls-size,
+  .ls-date {
+    display: none;
+  }
+  
+  .ls-name {
+    font-size: 1rem;
+  }
+  
+  .ls-header {
+    display: none;
+  }
+}
