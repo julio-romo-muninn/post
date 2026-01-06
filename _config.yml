@@ -37,7 +37,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-archives
+  - jekyll-paginate
 
 # SEO Settings
 twitter:
