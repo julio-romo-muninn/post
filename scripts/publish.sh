@@ -58,8 +58,23 @@ check_git() {
 # Verificar que Bundle está instalado
 check_bundle() {
     if ! command -v bundle &> /dev/null; then
-        print_error "Bundler no está instalado. Ejecuta: gem install bundler"
+        print_error "Bundler no está instalado. Ejecuta: gem install bundler -v 2.5.0"
     fi
+}
+
+# Verificar/instalar Bundler 2.5.0 (compatible con GitHub Actions Ruby 3.1.7)
+setup_bundler() {
+    print_step "Verificando Bundler compatible con GitHub Pages..."
+    
+    # GitHub Pages usa Ruby 3.1.7, necesita Bundler 2.x
+    REQUIRED_BUNDLER="2.5.0"
+    
+    if ! gem list bundler -i -v "$REQUIRED_BUNDLER" &> /dev/null; then
+        print_step "Instalando Bundler $REQUIRED_BUNDLER..."
+        gem install bundler -v "$REQUIRED_BUNDLER" --no-document
+    fi
+    
+    print_success "Bundler $REQUIRED_BUNDLER disponible"
 }
 
 # Obtener el nombre del autor desde git config
@@ -83,6 +98,7 @@ main() {
     check_directory
     check_git
     check_bundle
+    setup_bundler
     print_success "Requisitos verificados"
     
     # Guardar rama actual
@@ -160,8 +176,8 @@ main() {
     
     # Compilar el sitio
     print_step "Compilando el sitio con Jekyll..."
-    bundle install --quiet
-    JEKYLL_ENV=production bundle exec jekyll build
+    bundle _2.5.0_ install --quiet
+    JEKYLL_ENV=production bundle _2.5.0_ exec jekyll build
     print_success "Sitio compilado correctamente"
     
     # Push de la rama de trabajo

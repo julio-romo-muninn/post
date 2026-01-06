@@ -43,10 +43,14 @@ if %errorlevel% neq 0 (
 REM Verificar Bundle
 where bundle >nul 2>nul
 if %errorlevel% neq 0 (
-    echo %RED%[ERROR]%NC% Bundler no está instalado. Ejecuta: gem install bundler
+    echo %RED%[ERROR]%NC% Bundler no está instalado. Ejecuta: gem install bundler -v 2.5.0
     pause
     exit /b 1
 )
+
+REM Instalar Bundler 2.5.0 si no está (compatible con GitHub Actions Ruby 3.1.7)
+echo %YELLOW%[PASO]%NC% Verificando Bundler compatible con GitHub Pages...
+call gem install bundler -v 2.5.0 --no-document 2>nul
 
 echo %YELLOW%[PASO]%NC% Verificando requisitos...
 echo %GREEN%[OK]%NC% Requisitos verificados
@@ -133,9 +137,9 @@ echo %GREEN%[OK]%NC% Commit creado
 
 REM Compilar el sitio
 echo %YELLOW%[PASO]%NC% Compilando el sitio con Jekyll...
-call bundle install --quiet
+call bundle _2.5.0_ install --quiet
 set JEKYLL_ENV=production
-call bundle exec jekyll build
+call bundle _2.5.0_ exec jekyll build
 echo %GREEN%[OK]%NC% Sitio compilado correctamente
 
 REM Push de la rama de trabajo
