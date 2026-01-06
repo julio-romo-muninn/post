@@ -5,15 +5,16 @@ layout: default
 <section class="archive-section">
   <header class="archive-header">
     <div class="terminal-breadcrumb">
-      <span class="prompt">$</span> grep -r "category: {{ page.title }}" ./posts/
+      <span class="prompt">$</span> grep -r "category: {{ page.category }}" ./posts/
     </div>
     <h1 class="page-title">
-      <span class="bracket">[</span> Categoría: {{ page.title }} <span class="bracket">]</span>
+      <span class="bracket">[</span> Categoría: {{ page.category }} <span class="bracket">]</span>
     </h1>
   </header>
   
   <div class="posts-grid">
-    {% for post in page.posts %}
+    {% assign category_posts = site.categories[page.category] %}
+    {% for post in category_posts %}
     <article class="post-card">
       <div class="post-meta">
         <time datetime="{{ post.date | date_to_xmlschema }}">
