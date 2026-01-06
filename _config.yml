@@ -15,9 +15,9 @@ author:
   bio: "Pensando como hackers, atacando como hackers..."
   avatar: "/assets/img/avatar.png"
   social:
-    twitter: "tpx"
-    linkedin: "tpx"
-    instagram: "tpx"
+    twitter: "tpx_Security"
+    linkedin: "tpx_Security"
+    instagram: "tpx.Security"
 
 # Build Settings
 markdown: kramdown

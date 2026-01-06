@@ -108,13 +108,14 @@
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: $spacing-xs;
+  gap: $spacing-sm;
   margin: 0;
   padding: 0;
   flex-shrink: 1;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  overflow: hidden;
+  align-items: center;
+  overflow: visible;
   
   // Hide menu header on desktop
   .nav-menu-header {
@@ -239,20 +240,37 @@
 
 .nav-link {
   font-family: $font-mono;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: $color-text-secondary;
-  padding: $spacing-xs $spacing-sm;
+  padding: $spacing-sm $spacing-md;
   border-radius: $radius-sm;
-  transition: color 0.15s ease;
+  transition: all 0.2s ease;
   display: flex;
   align-items: center;
   gap: 0;
   white-space: nowrap;
+  position: relative;
+  background: transparent;
+  border: none;
   
   .prompt {
-    color: $color-primary;
-    opacity: 0.6;
-    transition: opacity 0.15s ease;
+    color: $color-secondary;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+    margin-right: 2px;
+  }
+  
+  // Underline effect on hover
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: $spacing-md;
+    right: $spacing-md;
+    height: 2px;
+    background: $color-primary;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
   }
   
   &:hover {
@@ -260,6 +278,11 @@
     
     .prompt {
       opacity: 1;
+      color: $color-primary;
+    }
+    
+    &::after {
+      transform: scaleX(1);
     }
   }
   
@@ -268,6 +291,12 @@
     
     .prompt {
       opacity: 1;
+      color: $color-primary;
+    }
+    
+    &::after {
+      transform: scaleX(1);
+      background: $color-primary;
     }
   }
 }

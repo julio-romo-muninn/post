@@ -275,36 +275,36 @@
   grid-template-columns: 1fr 1fr;
   gap: $spacing-lg;
   margin-bottom: $spacing-xl;
-}
-
-.nav-link {
-  display: flex;
-  flex-direction: column;
-  padding: $spacing-lg;
-  background-color: $color-bg-secondary;
-  border: 1px solid $color-border;
-  border-radius: $radius-md;
-  transition: all $transition-fast;
   
-  &:hover {
-    border-color: $color-primary;
-    text-shadow: none;
-  }
-  
-  &.next {
-    text-align: right;
-  }
-  
-  .nav-label {
-    font-family: $font-mono;
-    font-size: $font-size-sm;
-    color: $color-primary;
-    margin-bottom: $spacing-xs;
-  }
-  
-  .nav-title {
-    color: $color-text-primary;
-    font-size: $font-size-sm;
+  .post-nav-link {
+    display: flex;
+    flex-direction: column;
+    padding: $spacing-lg;
+    background-color: $color-bg-secondary;
+    border: 1px solid $color-border;
+    border-radius: $radius-md;
+    transition: all $transition-fast;
+    
+    &:hover {
+      border-color: $color-primary;
+      text-shadow: none;
+    }
+    
+    &.next {
+      text-align: right;
+    }
+    
+    .nav-label {
+      font-family: $font-mono;
+      font-size: $font-size-sm;
+      color: $color-primary;
+      margin-bottom: $spacing-xs;
+    }
+    
+    .nav-title {
+      color: $color-text-primary;
+      font-size: $font-size-sm;
+    }
   }
 }
 
