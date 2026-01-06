@@ -15,6 +15,9 @@ gem "activesupport", "~> 7.0"
 # Pin nokogiri to 1.16.x for Ruby 3.1.7 compatibility (GitHub Actions)
 gem "nokogiri", "~> 1.16.0"
 
+# Pin public_suffix to 5.x for Ruby 3.1.7 compatibility (GitHub Actions)
+gem "public_suffix", "~> 5.0"
+
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-seo-tag"
