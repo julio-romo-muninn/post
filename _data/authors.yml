@@ -7,11 +7,11 @@
 tpx-team:
   name: "Julio Romo"
   bio: "Lider de ciber inteligencia, apacionado por el hacking etico."
-  avatar: "/assets/img/authors/tpx-team.svg"
+  avatar: "/assets/img/authors/julio-romo-muninn.png"
   twitter: "tpx"
-  github: "tpx"
-  linkedin: "tpx"
-  instagram: "tpx"
+  github: "julio-romo-muninn"
+  linkedin: "0xjulioromo"
+  instagram: "0xjulioromo"
   website: "https://tpx.security"
 
 # Example for additional authors:
