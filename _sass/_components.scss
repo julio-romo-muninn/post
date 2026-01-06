@@ -537,3 +537,46 @@
     display: none;
   }
 }
+
+// Category/Tag sections
+.category-section,
+.tag-section {
+  margin-top: $spacing-3xl;
+  padding-top: $spacing-xl;
+  border-top: 1px solid $color-border;
+  scroll-margin-top: calc($header-height + $spacing-lg);
+  
+  &:first-of-type {
+    margin-top: $spacing-2xl;
+  }
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $spacing-xl;
+  flex-wrap: wrap;
+  gap: $spacing-md;
+}
+
+.section-title {
+  font-family: $font-mono;
+  font-size: $font-size-lg;
+  color: $color-text-primary;
+  margin: 0;
+  
+  .prompt {
+    color: $color-primary;
+    margin-right: $spacing-sm;
+  }
+}
+
+.post-count {
+  font-family: $font-mono;
+  font-size: $font-size-sm;
+  color: $color-text-muted;
+  background: $color-bg-tertiary;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: $radius-sm;
+}
