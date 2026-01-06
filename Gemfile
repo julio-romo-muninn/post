@@ -9,6 +9,9 @@ gem "connection_pool", "~> 2.4"
 # Pin minitest to 5.x for Ruby 3.1.7 compatibility (GitHub Actions)
 gem "minitest", "~> 5.0"
 
+# Pin activesupport to 7.x for Ruby 3.1.7 compatibility (GitHub Actions)
+gem "activesupport", "~> 7.0"
+
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-seo-tag"
