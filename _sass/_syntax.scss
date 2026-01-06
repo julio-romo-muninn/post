@@ -2,7 +2,7 @@
 // SYNTAX HIGHLIGHTING - HACKER THEME
 // ==============================================
 
-@use "variables" as *;
+@import "variables";
 
 .highlight {
   // Colors only - layout is in _base.scss

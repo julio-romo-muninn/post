@@ -2,7 +2,7 @@
 // BASE STYLES
 // ==============================================
 
-@use "variables" as *;
+@import "variables";
 
 *, *::before, *::after {
   box-sizing: border-box;

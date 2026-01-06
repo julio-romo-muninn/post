@@ -2,7 +2,7 @@
 // LAYOUT STYLES
 // ==============================================
 
-@use "variables" as *;
+@import "variables";
 
 .main-container {
   min-height: calc(100vh - #{$header-height} - 200px);

@@ -2,7 +2,7 @@
 // POST STYLES
 // ==============================================
 
-@use "variables" as *;
+@import "variables";
 
 .post {
   max-width: $max-width-content;

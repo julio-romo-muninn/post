@@ -2,11 +2,11 @@
 # Main CSS file - Imports all Sass partials
 ---
 
-@use "variables" as *;
-@use "base";
-@use "layout";
-@use "components";
-@use "post";
-@use "syntax";
-@use "animations";
-@use "responsive";
+@import "variables";
+@import "base";
+@import "layout";
+@import "components";
+@import "post";
+@import "syntax";
+@import "animations";
+@import "responsive";

@@ -2,7 +2,7 @@
 // RESPONSIVE STYLES
 // ==============================================
 
-@use "variables" as *;
+@import "variables";
 
 // Mobile Navigation
 @media (max-width: $breakpoint-md) {
