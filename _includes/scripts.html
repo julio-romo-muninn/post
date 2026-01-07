@@ -52,4 +52,33 @@
 {% if site.goatcounter %}
 <script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+
+{% if page.layout == 'post' %}
+<script>
+  // Mostrar contador de visualizaciones usando la API de GoatCounter
+  var statsInterval = setInterval(function() {
+    if (window.goatcounter && window.goatcounter.get_data) {
+      clearInterval(statsInterval);
+      
+      var path = window.goatcounter.get_data()['p'];
+      var xhr = new XMLHttpRequest();
+      
+      xhr.addEventListener('load', function() {
+        try {
+          var data = JSON.parse(this.responseText);
+          var statsEl = document.getElementById('stats');
+          if (statsEl && data.count) {
+            statsEl.textContent = data.count + ' visualizaciones';
+          }
+        } catch (e) {
+          console.error('Error parsing GoatCounter data:', e);
+        }
+      });
+      
+      xhr.open('GET', 'https://{{ site.goatcounter }}.goatcounter.com/counter/' + encodeURIComponent(path) + '.json');
+      xhr.send();
+    }
+  }, 100);
+</script>
+{% endif %}
 {% endif %}
