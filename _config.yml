@@ -7,6 +7,7 @@ description: >-
 url: "https://post.tpx.security" # Tu dominio con Cloudflare
 baseurl: "" # Raíz del sitio
 lang: es-ES
+image: /assets/img/og-default.png
 
 # Author
 author:
