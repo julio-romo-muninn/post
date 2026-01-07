@@ -16,7 +16,7 @@
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta property="og:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ '/assets/img/og-default.svg' | absolute_url }}{% endif %}">
+<meta property="og:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ '/assets/img/og-default.png' | absolute_url }}{% endif %}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:locale" content="{{ site.lang | default: 'es_ES' }}">
 
@@ -34,7 +34,7 @@
 <meta name="twitter:url" content="{{ page.url | absolute_url }}">
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ '/assets/img/og-default.svg' | absolute_url }}{% endif %}">
+<meta name="twitter:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ '/assets/img/og-default.png' | absolute_url }}{% endif %}">
 
 <!-- JSON-LD Schema -->
 <script type="application/ld+json">
@@ -44,7 +44,7 @@
   "@type": "BlogPosting",
   "headline": "{{ page.title | escape }}",
   "description": "{% if page.description %}{{ page.description | escape }}{% else %}{{ page.excerpt | strip_html | truncate: 160 | escape }}{% endif %}",
-  "image": "{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ '/assets/img/og-default.svg' | absolute_url }}{% endif %}",
+  "image": "{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ '/assets/img/og-default.png' | absolute_url }}{% endif %}",
   "datePublished": "{{ page.date | date_to_xmlschema }}",
   "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
   "author": {
