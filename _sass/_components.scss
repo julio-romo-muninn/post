@@ -848,12 +848,17 @@
   border: none;
   font-family: $font-mono;
   font-size: $font-size-base;
-  color: $color-text-primary;
+  color: $color-primary;
   padding: $spacing-md 0;
   outline: none;
+  caret-color: $color-primary;
   
   &::placeholder {
     color: $color-text-muted;
+  }
+  
+  &:focus {
+    color: $color-primary;
   }
 }
 
