@@ -62,6 +62,9 @@ newsletter:
   provider: "buttondown"
   action: "https://buttondown.email/api/emails/embed-subscribe/tpx"  # Reemplaza 'tpx' con tu username de Buttondown
 
+# Analytics
+goatcounter: "post-tpx"  # Reemplaza con tu código de GoatCounter (ej: tpx-blog.goatcounter.com)
+
 # Collections
 collections:
   posts:
