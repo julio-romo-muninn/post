@@ -152,7 +152,7 @@
 
 // Post Content wrapper
 .post-card .post-content {
-  padding: $spacing-lg;
+  padding: $spacing-md;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -162,7 +162,7 @@
   display: flex;
   align-items: center;
   gap: $spacing-md;
-  margin-bottom: $spacing-md;
+  margin-bottom: $spacing-sm;
   font-size: $font-size-sm;
   color: $color-text-secondary;
   font-family: $font-mono;
@@ -178,7 +178,7 @@
 .post-title {
   font-family: $font-mono;
   font-size: 1.1rem;
-  margin-bottom: $spacing-md;
+  margin-bottom: $spacing-sm;
   line-height: 1.4;
   word-wrap: break-word;
   overflow-wrap: break-word;
