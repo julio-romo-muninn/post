@@ -52,25 +52,4 @@
 {% if site.goatcounter %}
 <script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
-
-{% if page.layout == 'post' %}
-<script>
-  // Obtener contador de visualizaciones de GoatCounter
-  window.addEventListener('load', function() {
-    var path = '{{ page.url }}';
-    fetch('https://{{ site.goatcounter }}.goatcounter.com/counter/' + encodeURIComponent(path) + '.json')
-      .then(function(r) { return r.json() })
-      .then(function(data) {
-        var statsEl = document.getElementById('stats');
-        if (statsEl && data.count) {
-          statsEl.textContent = data.count + ' visualizaciones';
-        }
-      })
-      .catch(function() {
-        var statsEl = document.getElementById('stats');
-        if (statsEl) statsEl.textContent = '- visualizaciones';
-      });
-  });
-</script>
-{% endif %}
 {% endif %}
