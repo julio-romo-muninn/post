@@ -5,7 +5,7 @@ categories: [Posts,Cybersecurity]
 tags: [cybersecurity,osint]
 description: "La información abierta también expone riesgos. OSINT puede ser defensa… o ventaja para el atacante."
 author: julio-romo
-image: /assets/img/posts/la_evolucion_de_los_cyber_ataques.png
+image: /assets/img/posts/cuando-la-informacion-abierta-se-convierte-en-vector-de-riesgo.jpeg
 toc: false
 ---
 
