@@ -1,6 +1,6 @@
 #!/bin/bash
 # ==============================================
-# TPX BLOG - Setup para GitHub Pages (Linux/macOS)
+# tpx BLOG - Setup para GitHub Pages (Linux/macOS)
 # ==============================================
 # Este script configura el entorno para ser
 # compatible con GitHub Pages (Ruby 3.1.7)
@@ -17,7 +17,7 @@ NC='\033[0m'
 
 echo -e "${BLUE}"
 echo "╔════════════════════════════════════════╗"
-echo "║   TPX BLOG - Setup GitHub Pages        ║"
+echo "║   tpx BLOG - Setup GitHub Pages        ║"
 echo "╚════════════════════════════════════════╝"
 echo -e "${NC}"
 

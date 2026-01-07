@@ -1,9 +1,9 @@
 ---
-title: "Bienvenido a TPX Post: Tu Portal al Mundo Tech"
+title: "Bienvenido a tpx Post: Tu Portal al Mundo Tech"
 date: 2026-01-06 10:00:00 -0500
 categories: [General, Anuncios]
 tags: [bienvenida, blog, tech]
-description: "Presentación oficial de TPX Post, tu nuevo recurso para tutoriales de desarrollo, ciberseguridad y las últimas tendencias en tecnología."
+description: "Presentación oficial de tpx Post, tu nuevo recurso para tutoriales de desarrollo, ciberseguridad y las últimas tendencias en tecnología."
 author: tpx-team
 image: /assets/img/posts/welcome.svg
 toc: true
@@ -11,7 +11,7 @@ toc: true
 
 ## Introducción
 
-¡Bienvenido a **TPX Post**! Este es el primer post de nuestro nuevo espacio dedicado a compartir conocimiento sobre desarrollo de software, ciberseguridad y tecnología en general.
+¡Bienvenido a **tpx Post**! Este es el primer post de nuestro nuevo espacio dedicado a compartir conocimiento sobre desarrollo de software, ciberseguridad y tecnología en general.
 
 ## ¿Qué encontrarás aquí?
 

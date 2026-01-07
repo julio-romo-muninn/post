@@ -1,6 +1,6 @@
 #!/bin/bash
 # ==============================================
-# TPX BLOG - Crear Nuevo Post (Linux/macOS)
+# tpx BLOG - Crear Nuevo Post (Linux/macOS)
 # ==============================================
 
 set -e
@@ -16,7 +16,7 @@ POSTS_DIR="_posts"
 
 echo -e "${BLUE}"
 echo "╔════════════════════════════════════════╗"
-echo "║       TPX BLOG - Nuevo Post            ║"
+echo "║       tpx BLOG - Nuevo Post            ║"
 echo "╚════════════════════════════════════════╝"
 echo -e "${NC}"
 
@@ -81,7 +81,7 @@ Tu contenido aquí...
 
 \`\`\`bash
 # Ejemplo de código
-echo "Hola TPX Blog"
+echo "Hola tpx Blog"
 \`\`\`
 
 ### Subtítulo 2

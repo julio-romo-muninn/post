@@ -1,4 +1,4 @@
-# TPX Post
+# tpx Post
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-00ff9d?style=flat-square&logo=github)](https://yourusername.github.io/blog)
 [![Jekyll](https://img.shields.io/badge/Jekyll-4.3-CC0000?style=flat-square&logo=jekyll)](https://jekyllrb.com/)
@@ -6,7 +6,7 @@
 
 > 🖥️ Post técnico con diseño hacker sobre desarrollo, ciberseguridad y tecnología.
 
-![TPX Post Preview](assets/img/preview.png)
+![tpx Post Preview](assets/img/preview.png)
 
 ## ✨ Características
 
@@ -254,5 +254,5 @@ Este proyecto está bajo la Licencia MIT. Ver [LICENSE](LICENSE) para más detal
 ---
 
 <p align="center">
-  Hecho con 💚 por <a href="https://github.com/tpx">TPX Team</a>
+  Hecho con 💚 por <a href="https://github.com/tpx">tpx Team</a>
 </p>

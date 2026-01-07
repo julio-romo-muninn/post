@@ -1,6 +1,6 @@
 @echo off
 REM ==============================================
-REM TPX BLOG - Script de Publicación (Windows)
+REM tpx BLOG - Script de Publicación (Windows)
 REM ==============================================
 REM Este script automatiza el proceso de publicar
 REM un nuevo post sin conflictos en el repositorio.
@@ -21,7 +21,7 @@ set "NC=[0m"
 
 echo.
 echo %BLUE%╔════════════════════════════════════════╗%NC%
-echo %BLUE%║       TPX BLOG - Publicación           ║%NC%
+echo %BLUE%║       tpx BLOG - Publicación           ║%NC%
 echo %BLUE%╚════════════════════════════════════════╝%NC%
 echo.
 

@@ -1,6 +1,6 @@
 @echo off
 REM ==============================================
-REM TPX BLOG - Crear Nuevo Post (Windows)
+REM tpx BLOG - Crear Nuevo Post (Windows)
 REM ==============================================
 
 setlocal EnableDelayedExpansion
@@ -9,7 +9,7 @@ set POSTS_DIR=_posts
 
 echo.
 echo [94m╔════════════════════════════════════════╗[0m
-echo [94m║       TPX BLOG - Nuevo Post            ║[0m
+echo [94m║       tpx BLOG - Nuevo Post            ║[0m
 echo [94m╚════════════════════════════════════════╝[0m
 echo.
 
@@ -81,7 +81,7 @@ echo Tu contenido aquí...
 echo.
 echo ```bash
 echo # Ejemplo de código
-echo echo "Hola TPX Blog"
+echo echo "Hola tpx Blog"
 echo ```
 echo.
 echo ### Subtítulo 2

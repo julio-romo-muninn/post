@@ -1,6 +1,6 @@
 @echo off
 REM ==============================================
-REM TPX BLOG - Setup para GitHub Pages (Windows)
+REM tpx BLOG - Setup para GitHub Pages (Windows)
 REM ==============================================
 REM Este script configura el entorno para ser
 REM compatible con GitHub Pages (Ruby 3.1.7)
@@ -16,7 +16,7 @@ set "NC=[0m"
 
 echo.
 echo %BLUE%╔════════════════════════════════════════╗%NC%
-echo %BLUE%║   TPX BLOG - Setup GitHub Pages        ║%NC%
+echo %BLUE%║   tpx BLOG - Setup GitHub Pages        ║%NC%
 echo %BLUE%╚════════════════════════════════════════╝%NC%
 echo.
 

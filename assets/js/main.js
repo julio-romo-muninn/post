@@ -1,5 +1,5 @@
 // ==============================================
-// MAIN JAVASCRIPT - TPX BLOG
+// MAIN JAVASCRIPT - tpx BLOG
 // ==============================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
       })
       .then(function(response) {
         if (response.ok) {
-          showMessage('success', '$ echo "¡Suscripción exitosa! Bienvenido a TPX 🎉"');
+          showMessage('success', '$ echo "¡Suscripción exitosa! Bienvenido a tpx 🎉"');
           emailInput.value = '';
         } else {
           throw new Error('Error en la suscripción');
@@ -417,7 +417,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  console.log('%c[TPX BLOG]%c Welcome, hacker! 🖥️', 
+  console.log('%c[tpx BLOG]%c Welcome, hacker! 🖥️', 
     'color: #ffd607; font-weight: bold; font-size: 14px;',
     'color: #e6edf3; font-size: 12px;'
   );

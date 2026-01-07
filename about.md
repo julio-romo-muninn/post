@@ -2,12 +2,12 @@
 layout: page
 title: About
 permalink: /about/
-description: "Conoce más sobre TPX Post, nuestra misión y el equipo detrás del contenido."
+description: "Conoce más sobre tpx Post, nuestra misión y el equipo detrás del contenido."
 ---
 
 ## // Sobre Nosotros
 
-Bienvenido a **TPX Post**, un espacio dedicado a explorar el mundo de la tecnología, el desarrollo de software y la ciberseguridad desde una perspectiva técnica y práctica.
+Bienvenido a **tpx Post**, un espacio dedicado a explorar el mundo de la tecnología, el desarrollo de software y la ciberseguridad desde una perspectiva técnica y práctica.
 
 ### // Nuestra Misión
 

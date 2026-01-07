@@ -4,7 +4,7 @@ date: 2026-01-03 11:00:00 -0500
 categories: [Tutorial, DevOps]
 tags: [docker, containers, devops, deployment, tutorial]
 description: "Aprende Docker desde los fundamentos hasta despliegues en producción. Incluye ejemplos prácticos con Docker Compose y buenas prácticas."
-author: TPX Team
+author: tpx Team
 image: /assets/img/posts/docker.svg
 toc: true
 ---

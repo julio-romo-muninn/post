@@ -34,7 +34,7 @@
   
   <!-- Logo/Brand -->
   <text x="600" y="280" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="120" font-weight="bold" fill="#ffd607" text-anchor="middle">
-    <tspan fill="#ffd607">[</tspan><tspan fill="#e6edf3">TPX</tspan><tspan fill="#ffd607">]</tspan>
+    <tspan fill="#ffd607">[</tspan><tspan fill="#e6edf3">tpx</tspan><tspan fill="#ffd607">]</tspan>
   </text>
   
   <!-- Tagline -->

@@ -4,7 +4,7 @@ date: 2026-01-05 14:30:00 -0500
 categories: [Tutorial, DevOps]
 tags: [git, versionamiento, desarrollo, tutorial]
 description: "Aprende a usar Git como un profesional. Desde los comandos básicos hasta workflows avanzados con branching y merge strategies."
-author: TPX Team
+author: tpx Team
 image: /assets/img/posts/git.svg
 toc: true
 ---

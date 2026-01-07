@@ -1,6 +1,6 @@
 #!/bin/bash
 # ==============================================
-# TPX BLOG - Script de Publicación (Linux/macOS)
+# tpx BLOG - Script de Publicación (Linux/macOS)
 # ==============================================
 # Este script automatiza el proceso de publicar
 # un nuevo post sin conflictos en el repositorio.
@@ -23,7 +23,7 @@ BUILD_BRANCH="gh-pages"
 print_header() {
     echo -e "${BLUE}"
     echo "╔════════════════════════════════════════╗"
-    echo "║       TPX BLOG - Publicación           ║"
+    echo "║       tpx BLOG - Publicación           ║"
     echo "╚════════════════════════════════════════╝"
     echo -e "${NC}"
 }
