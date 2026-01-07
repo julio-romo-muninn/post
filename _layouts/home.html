@@ -90,4 +90,8 @@ layout: default
   {% endif %}
 </section>
 
+{% if site.newsletter.enabled %}
+{% include newsletter.html %}
+{% endif %}
+
 {{ content }}

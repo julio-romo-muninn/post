@@ -1,0 +1,78 @@
+<!-- Newsletter Subscription Component -->
+<section class="newsletter-section">
+  <div class="newsletter-container">
+    <div class="newsletter-terminal">
+      <div class="terminal-header">
+        <span class="terminal-btn red"></span>
+        <span class="terminal-btn yellow"></span>
+        <span class="terminal-btn green"></span>
+        <span class="terminal-title">~/subscribe</span>
+      </div>
+      <div class="terminal-body">
+        <div class="newsletter-content">
+          <p class="typing-effect">
+            <span class="prompt">$</span> cat newsletter.txt
+          </p>
+          <h3 class="newsletter-title">// Mantente Actualizado</h3>
+          <p class="newsletter-description">
+            Suscríbete para recibir notificaciones de nuevos posts sobre desarrollo, 
+            ciberseguridad y tecnología directamente en tu inbox.
+          </p>
+          
+          <form 
+            class="newsletter-form" 
+            action="{{ site.newsletter.action | default: '#' }}" 
+            method="POST"
+            id="newsletter-form"
+          >
+            <div class="form-group">
+              <span class="input-prompt">></span>
+              <input 
+                type="email" 
+                name="email" 
+                id="newsletter-email"
+                placeholder="tu@email.com" 
+                required
+                autocomplete="email"
+                aria-label="Correo electrónico"
+              >
+            </div>
+            <button type="submit" class="btn-subscribe">
+              <span class="btn-text">[ Suscribirse ]</span>
+              <span class="btn-loading" hidden>
+                <span class="loading-dots">...</span>
+              </span>
+            </button>
+          </form>
+          
+          <div class="newsletter-message" id="newsletter-message" hidden></div>
+          
+          <div class="newsletter-alternatives">
+            <span class="alt-text">También puedes seguirnos via:</span>
+            <div class="alt-links">
+              <a href="{{ '/feed.xml' | relative_url }}" class="alt-link" title="RSS Feed">
+                <span class="alt-icon">📡</span> RSS
+              </a>
+              {% if site.author.social.twitter %}
+              <a href="https://twitter.com/{{ site.author.social.twitter }}" target="_blank" rel="noopener" class="alt-link" title="Twitter">
+                <span class="alt-icon">🐦</span> Twitter
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        
+        <div class="newsletter-features">
+          <p class="typing-effect">
+            <span class="prompt">$</span> ls -la benefits/
+          </p>
+          <ul class="features-list">
+            <li><span class="check">✓</span> Sin spam, solo contenido de calidad</li>
+            <li><span class="check">✓</span> Máximo 1-2 emails por semana</li>
+            <li><span class="check">✓</span> Cancela cuando quieras</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
