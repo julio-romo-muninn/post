@@ -91,4 +91,3 @@ $ echo "¡Gracias por leernos!"
 
 ---
 
-¿Tienes alguna sugerencia de tema? ¡Déjanos un comentario o escríbenos!

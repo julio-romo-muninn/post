@@ -1,6 +1,6 @@
 ---
 title: "La evolucion de los cyber ataques"
-date: 2026-01-07 10:00:00 -0500
+date: 2026-01-07 08:00:00 -0500
 categories: [Posts,Cybersecurity]
 tags: [cybersecurity,hacking]
 description: "La evolucion de los ataques cyberneticos y tecnicas actuales de los cybeercriminales."
@@ -15,6 +15,7 @@ Hoy, muchos ataques comienzan desde dentro, utilizando accesos legítimos filtra
 
 ## Primera etapa: ataques básicos y visibles
 
+![Google hackeado por tpx.security](/assets/img/posts/google-hacked-tpx.svg)
 En los primeros años de Internet, los ataques eran relativamente simples y ruidosos:
 - Defacement de sitios web
 - Fuerza bruta contra servicios expuestos
@@ -25,6 +26,7 @@ El atacante buscaba visibilidad, impacto inmediato y, muchas veces, notoriedad. 
 
 ## Segunda etapa: sofisticación y evasión
 
+![Ejemplo de phishing](/assets/img/posts/phishing-tpx.svg)
 Con el fortalecimiento del perímetro, los atacantes comenzaron a adaptarse:
 - Exploits más específicos
 - Malware ofuscado
@@ -35,6 +37,7 @@ Aquí aparece un cambio clave: ya no se ataca solo a la infraestructura, se atac
 
 ## Tercera etapa: credenciales filtradas y accesos legítimos
 
+![Logs de malware](/assets/img/posts/logs-malware-tpx.svg)
 En la actualidad, uno de los vectores más comunes no es una vulnerabilidad técnica, sino el acceso legítimo comprometido:
 - Logs de malware (infostealers)
 - Filtraciones de bases de datos
@@ -49,6 +52,7 @@ Si el atacante entra con usuario y contraseña correctos, el firewall no ve un a
 
 ## Del acceso inicial a la escalación interna
 
+![Escaneo y movimiento lateral](/assets/img/posts/lateral-movement-tpx.svg)
 Una vez dentro, el atacante ya no necesita explotar el perímetro. Su objetivo cambia a:
 - Enumeración interna
 - Escalación de privilegios
@@ -60,7 +64,7 @@ Muchas organizaciones no monitorean adecuadamente el comportamiento interno, con
 
 
 ## El papel crítico de los logs y la detección
-
+![Logs sin protección: mina de oro para atacantes](/assets/img/posts/logs-treasure-warning-tpx.svg)
 Paradójicamente, los mismos logs que ayudan a auditar el sistema pueden convertirse en una mina de oro para los atacantes si:
 - Se almacenan sin protección
 - Contienen tokens o credenciales
@@ -87,5 +91,3 @@ $ echo "¡Gracias por leernos!"
 ```
 
 ---
-
-¿Tienes alguna sugerencia de tema? ¡Déjanos un comentario o escríbenos!

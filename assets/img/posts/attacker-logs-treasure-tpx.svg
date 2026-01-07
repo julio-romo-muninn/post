@@ -1,0 +1,32 @@
+<svg width="700" height="360" viewBox="0 0 700 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="700" height="360" rx="12" fill="#181A20"/>
+  <!-- Chest -->
+  <rect x="260" y="180" width="180" height="70" rx="16" fill="#23252B" stroke="#ffd607" stroke-width="4"/>
+  <rect x="260" y="170" width="180" height="30" rx="12" fill="#23252B" stroke="#ffd607" stroke-width="3"/>
+  <text x="320" y="220" font-family="monospace" font-size="22" fill="#ffd607" font-weight="bold">LOGS</text>
+  <!-- Chest shine -->
+  <ellipse cx="350" cy="210" rx="18" ry="7" fill="#ffd607" opacity="0.4"/>
+  <ellipse cx="390" cy="210" rx="18" ry="7" fill="#ffd607" opacity="0.4"/>
+  <!-- Treasure (valuable data) -->
+  <rect x="320" y="235" width="60" height="18" rx="5" fill="#00d4ff"/>
+  <text x="325" y="248" font-family="monospace" font-size="13" fill="#fff">admin:pass123</text>
+  <!-- Attacker -->
+  <ellipse cx="220" cy="210" rx="22" ry="22" fill="#23252B" stroke="#FF5F56" stroke-width="3"/>
+  <rect x="205" y="232" width="30" height="40" rx="10" fill="#23252B" stroke="#FF5F56" stroke-width="3"/>
+  <rect x="215" y="242" width="10" height="18" rx="3" fill="#FF5F56"/>
+  <!-- Attacker mask -->
+  <rect x="210" y="205" width="20" height="10" rx="5" fill="#FF5F56"/>
+  <rect x="215" y="208" width="4" height="4" rx="2" fill="#181A20"/>
+  <rect x="223" y="208" width="4" height="4" rx="2" fill="#181A20"/>
+  <!-- Attacker arm -->
+  <rect x="235" y="220" width="30" height="8" rx="4" fill="#FF5F56" transform="rotate(20 235 220)"/>
+  <!-- Attacker hand in chest -->
+  <ellipse cx="270" cy="230" rx="7" ry="5" fill="#FF5F56"/>
+  <!-- Sparkles -->
+  <circle cx="370" cy="190" r="3" fill="#ffd607"/>
+  <circle cx="410" cy="195" r="2" fill="#ffd607"/>
+  <circle cx="390" cy="185" r="2" fill="#ffd607"/>
+  <!-- Footer -->
+  <text x="60" y="340" font-family="monospace" font-size="13" fill="#888">Un atacante puede encontrar credenciales valiosas en los logs.</text>
+</svg>

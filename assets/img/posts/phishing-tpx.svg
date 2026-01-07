@@ -1,0 +1,32 @@
+<svg width="600" height="340" viewBox="0 0 600 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="340" rx="12" fill="#181A20"/>
+  <!-- Email window -->
+  <rect x="60" y="40" width="480" height="220" rx="16" fill="#23252B" stroke="#444" stroke-width="2"/>
+  <!-- Top bar -->
+  <rect x="60" y="40" width="480" height="36" rx="10" fill="#202226"/>
+  <!-- Circles -->
+  <circle cx="80" cy="58" r="6" fill="#FF5F56"/>
+  <circle cx="100" cy="58" r="6" fill="#FFBD2E"/>
+  <circle cx="120" cy="58" r="6" fill="#27C93F"/>
+  <!-- Email sender -->
+  <text x="80" y="85" font-family="monospace" font-size="15" fill="#bbb">De: soporte@banco-falso.com</text>
+  <text x="80" y="105" font-family="monospace" font-size="15" fill="#bbb">Para: usuario@ejemplo.com</text>
+  <!-- Phishing subject -->
+  <text x="80" y="130" font-family="monospace" font-size="17" fill="#FF5F56" font-weight="bold">[ALERTA] Acceso no autorizado detectado</text>
+  <!-- Phishing body -->
+  <text x="80" y="160" font-family="monospace" font-size="15" fill="#eee">Estimado cliente,</text>
+  <text x="80" y="180" font-family="monospace" font-size="15" fill="#eee">Detectamos un acceso sospechoso a su cuenta.</text>
+  <text x="80" y="200" font-family="monospace" font-size="15" fill="#eee">Por favor, verifique su identidad:</text>
+  <!-- Fake button -->
+  <rect x="80" y="220" width="220" height="36" rx="8" fill="#FF5F56"/>
+  <text x="110" y="245" font-family="monospace" font-size="18" fill="#fff" font-weight="bold">Verificar cuenta</text>
+  <!-- Phishing hook icon -->
+  <g>
+    <path d="M500 170 Q510 200 500 230" stroke="#FF5F56" stroke-width="5" fill="none"/>
+    <circle cx="500" cy="230" r="10" fill="#FF5F56"/>
+    <rect x="495" y="230" width="10" height="30" rx="5" fill="#FF5F56"/>
+  </g>
+  <!-- Footer -->
+  <text x="80" y="290" font-family="monospace" font-size="13" fill="#888">Nunca hagas clic en enlaces sospechosos.</text>
+</svg>

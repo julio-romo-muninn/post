@@ -228,5 +228,3 @@ Practica estos comandos en un repositorio de prueba antes de usarlos en proyecto
 </div>
 
 ---
-
-¿Quieres profundizar en algún tema específico? ¡Déjanos saber en los comentarios!

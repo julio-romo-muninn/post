@@ -1,0 +1,32 @@
+<svg width="600" height="340" viewBox="0 0 600 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Browser window -->
+  <rect x="20" y="30" width="560" height="280" rx="12" fill="#181A20" stroke="#444" stroke-width="2"/>
+  <!-- Browser top bar -->
+  <rect x="20" y="30" width="560" height="40" rx="10" fill="#23252B"/>
+  <!-- Circles (close, min, max) -->
+  <circle cx="45" cy="50" r="7" fill="#FF5F56"/>
+  <circle cx="70" cy="50" r="7" fill="#FFBD2E"/>
+  <circle cx="95" cy="50" r="7" fill="#27C93F"/>
+  <!-- URL bar -->
+  <rect x="120" y="43" width="340" height="15" rx="7" fill="#181A20" stroke="#444"/>
+  <text x="135" y="55" font-family="monospace" font-size="13" fill="#bbb">https://www.google.com</text>
+  <!-- Google logo (simplified) -->
+  <text x="80" y="110" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="bold">
+    <tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan>
+  </text>
+  <!-- Search box -->
+  <rect x="80" y="130" width="440" height="38" rx="8" fill="#23252B" stroke="#444"/>
+  <!-- Hacked message -->
+  <text x="90" y="200" font-family="monospace" font-size="28" fill="#FF5F56" font-weight="bold">
+    HACKED by tpx.security
+  </text>
+  <!-- Red underline for effect -->
+  <rect x="90" y="208" width="290" height="5" rx="2" fill="#FF5F56"/>
+  <!-- Terminal-style footer -->
+  <text x="80" y="260" font-family="monospace" font-size="16" fill="#bbb">
+    $ whoami
+  </text>
+  <text x="160" y="260" font-family="monospace" font-size="16" fill="#34A853">
+    tpx.security
+  </text>
+</svg>

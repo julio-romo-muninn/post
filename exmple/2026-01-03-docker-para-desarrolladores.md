@@ -420,5 +420,3 @@ $ docker run -it --rm alpine echo "¡Docker es genial! 🐳"
 ```
 
 ---
-
-¿Necesitas ayuda con Docker? ¡Comenta abajo!

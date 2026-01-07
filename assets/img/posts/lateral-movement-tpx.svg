@@ -1,0 +1,28 @@
+<svg width="700" height="360" viewBox="0 0 700 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="700" height="360" rx="12" fill="#181A20"/>
+  <!-- Terminal window -->
+  <rect x="60" y="40" width="580" height="260" rx="16" fill="#23252B" stroke="#444" stroke-width="2"/>
+  <!-- Top bar -->
+  <rect x="60" y="40" width="580" height="36" rx="10" fill="#202226"/>
+  <!-- Circles -->
+  <circle cx="80" cy="58" r="6" fill="#FF5F56"/>
+  <circle cx="100" cy="58" r="6" fill="#FFBD2E"/>
+  <circle cx="120" cy="58" r="6" fill="#27C93F"/>
+  <!-- Terminal prompt -->
+  <text x="90" y="90" font-family="monospace" font-size="16" fill="#34A853">$ nmap -sS 192.168.1.0/24</text>
+  <!-- Nmap output -->
+  <text x="90" y="120" font-family="monospace" font-size="13" fill="#ffd607">Starting Nmap 7.93 ( https://nmap.org )</text>
+  <text x="90" y="140" font-family="monospace" font-size="13" fill="#bbb">Nmap scan report for 192.168.1.10</text>
+  <text x="90" y="155" font-family="monospace" font-size="13" fill="#bbb">Host is up (0.0010s latency).</text>
+  <text x="90" y="170" font-family="monospace" font-size="13" fill="#00d4ff">PORT     STATE SERVICE</text>
+  <text x="90" y="185" font-family="monospace" font-size="13" fill="#ffd607">22/tcp   open  ssh</text>
+  <text x="90" y="200" font-family="monospace" font-size="13" fill="#ffd607">80/tcp   open  http</text>
+  <text x="90" y="215" font-family="monospace" font-size="13" fill="#bbb">Nmap scan report for 192.168.1.15</text>
+  <text x="90" y="230" font-family="monospace" font-size="13" fill="#bbb">Host is up (0.0008s latency).</text>
+  <text x="90" y="245" font-family="monospace" font-size="13" fill="#00d4ff">PORT     STATE SERVICE</text>
+  <text x="90" y="260" font-family="monospace" font-size="13" fill="#ffd607">3389/tcp open  ms-wbt-server</text>
+  <!-- Footer -->
+  <!-- Footer fuera del recuadro -->
+  <text x="80" y="320" font-family="monospace" font-size="13" fill="#888">Ejemplo de escaneo interno con Nmap: detecta hosts y servicios expuestos.</text>
+</svg>
