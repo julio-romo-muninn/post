@@ -4,7 +4,7 @@ date: 2026-01-07 08:00:00 -0500
 categories: [Posts,Cybersecurity]
 tags: [cybersecurity,hacking]
 description: "La evolucion de los ataques cyberneticos y tecnicas actuales de los cybeercriminales."
-author: muninn
+author: Julio-Romo
 image: /assets/img/posts/la_evolucion_de_los_cyber_ataques.png
 toc: false
 ---
