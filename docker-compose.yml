@@ -1,8 +1,6 @@
-version: '3.8'
-
 services:
   jekyll:
-    image: jekyll/jekyll:4.3
+    image: jekyll/jekyll:4
     container_name: tpx-blog
     command: jekyll serve --watch --force_polling --livereload
     ports:
@@ -13,6 +11,12 @@ services:
       - jekyll_bundle:/usr/local/bundle
     environment:
       - JEKYLL_ENV=development
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://0.0.0.0:4000"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 60s
 
 volumes:
   jekyll_bundle:

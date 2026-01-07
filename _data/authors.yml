@@ -14,6 +14,16 @@ tpx-team:
   instagram: "0xjulioromo"
   website: "https://tpx.security"
 
+muninn:
+  name: "Julio Romo"
+  bio: "Lider de ciber inteligencia, apacionado por el hacking etico."
+  avatar: "/assets/img/authors/julio-romo-muninn.png"
+  twitter: "0xjulioromo"
+  github: "julio-romo-muninn"
+  linkedin: "0xjulioromo"
+  instagram: "0xjulioromo"
+  website: "https://tpx.security"
+
 # Example for additional authors:
 # john-doe:
 #   name: "John Doe"

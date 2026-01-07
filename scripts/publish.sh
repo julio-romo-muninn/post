@@ -66,6 +66,12 @@ check_bundle() {
 setup_bundler() {
     print_step "Verificando Bundler compatible con GitHub Pages..."
     
+    # Verificar si Homebrew Ruby está disponible
+    if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
+        export PATH="/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/4.0.0/bin:$PATH"
+        print_success "Usando Ruby de Homebrew"
+    fi
+    
     # GitHub Pages usa Ruby 3.1.7, necesita Bundler 2.x
     REQUIRED_BUNDLER="2.5.0"
     

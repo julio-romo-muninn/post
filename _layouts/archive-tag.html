@@ -12,23 +12,23 @@ layout: default
     </h1>
   </header>
   
-  <div class="posts-grid">
+  <div class="archive-content">
     {% assign tag_posts = site.tags[page.tag] %}
-    {% for post in tag_posts %}
-    <article class="post-card">
-      <div class="post-meta">
+    <ul class="archive-list">
+      {% for post in tag_posts %}
+      <li class="archive-item">
         <time datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%d/%m/%Y" }}
+          {{ post.date | date: "%d/%m" }}
         </time>
-      </div>
-      <h3 class="post-title">
         <a href="{{ post.url | relative_url }}">
           <span class="prompt">></span> {{ post.title }}
         </a>
-      </h3>
-      <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
-    </article>
-    {% endfor %}
+        {% if post.categories.size > 0 %}
+        <span class="archive-category">{{ post.categories | first }}</span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
   </div>
   
   <div class="back-link">

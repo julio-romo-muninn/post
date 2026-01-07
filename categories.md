@@ -42,22 +42,22 @@ description: "Explora todos los posts organizados por categorías."
     <span class="post-count">{{ category[1].size }} posts</span>
   </div>
   
-  <div class="posts-grid">
-    {% for post in category[1] %}
-    <article class="post-card">
-      <div class="post-meta">
+  <div class="archive-content">
+    <ul class="archive-list">
+      {% for post in category[1] %}
+      <li class="archive-item">
         <time datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%d/%m/%Y" }}
+          {{ post.date | date: "%d/%m" }}
         </time>
-      </div>
-      <h3 class="post-title">
         <a href="{{ post.url | relative_url }}">
           <span class="prompt">></span> {{ post.title }}
         </a>
-      </h3>
-      <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
-    </article>
-    {% endfor %}
+        {% if post.tags.size > 0 %}
+        <span class="archive-category">{{ post.tags | first }}</span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
 {% endfor %}
