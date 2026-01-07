@@ -13,9 +13,10 @@ Bienvenido a **TPX Post**, un espacio dedicado a explorar el mundo de la tecnolo
 
 ```bash
 $ cat mission.txt
+> Fomentar las buenas prácticas de seguridad
+> Demostrar las mejores tecnicas para mantener tu privacidad.
 > Democratizar el conocimiento tecnológico
 > Compartir experiencias reales de desarrollo
-> Fomentar las buenas prácticas de seguridad
 > Construir una comunidad de aprendizaje
 ```
 
@@ -28,9 +29,8 @@ $ cat mission.txt
 
 ### // El Equipo
 
-Somos un grupo de entusiastas de la tecnología con experiencia en:
+Somos un grupo de profecionales en tecnología con experiencia en:
 
-- Desarrollo Full Stack
 - Seguridad informática
 - Cloud & DevOps
 - Inteligencia Artificial
@@ -39,16 +39,10 @@ Somos un grupo de entusiastas de la tecnología con experiencia en:
 
 ```javascript
 const contact = {
-  email: "contact@tpx.security",
-  github: "github.com/tpx",
-  twitter: "@tpx"
+  email: "hola@tpx.security",
+  twitter: "@tpx_security"
 };
 ```
 
 ¿Tienes preguntas o sugerencias? ¡No dudes en contactarnos!
 
----
-
-<div class="info">
-Este blog está construido con Jekyll y alojado en GitHub Pages. Todo el código es open source.
-</div>

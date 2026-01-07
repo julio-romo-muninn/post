@@ -9,6 +9,23 @@ layout: default
     </div>
     <h1 class="page-title">{{ page.title | default: "Archivo" }}</h1>
   </header>
+
+  <!-- Search Component -->
+  <div class="search-container">
+    <div class="search-box">
+      <span class="search-prompt">$</span>
+      <input 
+        type="text" 
+        id="search-input" 
+        class="search-input" 
+        placeholder="grep -r 'buscar...' ./posts"
+        autocomplete="off"
+        aria-label="Buscar posts"
+      >
+      <span class="search-icon">🔍</span>
+    </div>
+    <div id="search-results" class="search-results" aria-live="polite"></div>
+  </div>
   
   <div class="archive-content">
     {{ content }}

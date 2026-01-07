@@ -50,7 +50,16 @@ social:
     - https://twitter.com/tpx_Security
     - https://linkedin.com/company/tpx
 
-
+# Newsletter Configuration
+# Opciones soportadas:
+# - Mailchimp: Usa tu URL de action del formulario embebido
+# - Buttondown: https://buttondown.email/api/emails/embed-subscribe/TU_USUARIO
+# - ConvertKit: Tu URL de formulario
+# - Formspree: https://formspree.io/f/TU_FORM_ID
+newsletter:
+  enabled: true
+  provider: "buttondown"
+  action: "https://buttondown.email/api/emails/embed-subscribe/tpx"  # Reemplaza 'tpx' con tu username de Buttondown
 
 # Collections
 collections:
