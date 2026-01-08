@@ -60,7 +60,7 @@ social:
 newsletter:
   enabled: true
   provider: "buttondown"
-  action: "https://buttondown.email/api/emails/embed-subscribe/tpx"  # Reemplaza 'tpx' con tu username de Buttondown
+  action: "https://buttondown.email/api/emails/embed-subscribe/TPXSecurity"  # Reemplaza 'tpx' con tu username de Buttondown
 
 # Analytics
 goatcounter: "post-tpx"  # Reemplaza con tu código de GoatCounter (ej: tpx-blog.goatcounter.com)
