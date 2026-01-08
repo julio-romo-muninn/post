@@ -1,5 +1,5 @@
 ---
-title: "La evolucion de los ciber ataques"
+title: "La evolucion de los ciber-ataques"
 date: 2026-01-07 08:00:00 -0500
 categories: [Posts,Cybersecurity]
 tags: [cybersecurity,hacking]
