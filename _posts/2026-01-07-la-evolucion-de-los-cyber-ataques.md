@@ -1,9 +1,9 @@
 ---
-title: "La evolucion de los cyber ataques"
+title: "La evolucion de los ciber ataques"
 date: 2026-01-07 08:00:00 -0500
 categories: [Posts,Cybersecurity]
 tags: [cybersecurity,hacking]
-description: "La evolucion de los ataques cyberneticos y tecnicas actuales de los cybercriminales."
+description: "La evolucion de los ataques ciberneticos y tecnicas actuales de los cibercriminales."
 author: julio-romo
 image: /assets/img/posts/la_evolucion_de_los_cyber_ataques.png
 toc: false
