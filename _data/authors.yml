@@ -18,20 +18,20 @@ julio-romo:
   name: "Julio Romo"
   bio: "Líder de ciberinteligencia, apasionado por el hacking ético."
   avatar: "/assets/img/authors/julio-romo-muninn.png"
-  twitter: "0xjulioromo"
+  twitter: "@0xjulioromo"
   github: "julio-romo-muninn"
   linkedin: "0xjulioromo"
-  instagram: "0xjulioromo"
+  instagram: "@0xjulioromo"
   website: "https://tpx.security"
 
 santiago-saucedo:
   name: "Santiago Saucedo M"
   bio: "Ingeniero en Ciberinteligencia, enfocado en OSINT, análisis de amenazas y reducción de superficie informativa. Interesado en hacking ético y seguridad defensiva."
   avatar: "/assets/img/authors/santiago-magana.jpeg"
-  twitter: "Santiago_SM93"
+  twitter: "@Santiago_SM93"
   github: ""
   linkedin: "Santiago Saucedo Magaña"
-  instagram: "santiago_saucedom"
+  instagram: "@santiago_saucedom"
   website: "https://tpx.security"
 
 # Example for additional authors:
